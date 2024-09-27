@@ -1,77 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-</head>
+  <body>
+    <div class="wrapper">
+      <div class="side-menu">
+        <div class="side-menu__header">
+          <div class="header__icon-wrapper">
+            <svg class="header__icon" width="24" height="24">
+              <use href="sprite.svg#setting 1"></use>
+            </svg>
+          </div>
+          <div class="header__description-wrapper">
+            <h1 class="header__title">Dashboard</h1>
+            <span class="header__title-version">v.01</span>
+          </div>
+        </div>
 
-<body>
-  <div class="wrapper">
-    <div class="side-menu">
-      <div class="side-menu__header">
-        <div class="header__icon-wrapper"> <img src="/icons/setting.svg" class="header__icon"></img></div>
-        <div class="header__description-wrapper">
-          <h1 class="header__title">Dashboard
-          </h1>
-          <span class="header__title-version">v.01</span>
+        <div class="side-menu__items-list">
+          <ul class="items-list">
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#key-square"></use>
+                </svg>
+                <p class="items-list__text">Dashboard</p>
+              </div>
+            </li>
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#3d-square 1"></use>
+                </svg>
+
+                <p class="items-list__text">Product</p>
+                <svg class="items-list__arrow" width="16" height="16">
+                  <use href="sprite.svg#chevron-right 2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#user-square"></use>
+                </svg>
+                <p class="items-list__text">Customers</p>
+                <svg class="items-list__arrow" width="16" height="16">
+                  <use href="sprite.svg#chevron-right 2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#wallet-money 2"></use>
+                </svg>
+                <p class="items-list__text">Income</p>
+                <svg class="items-list__arrow" width="16" height="16">
+                  <use href="sprite.svg#chevron-right 2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#discount-shape 1"></use>
+                </svg>
+                <p class="items-list__text">Promote</p>
+                <svg class="items-list__arrow" width="16" height="16">
+                  <use href="sprite.svg#chevron-right 2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="items-list__item">
+              <div class="items-list__wrapper">
+                <svg
+                  class="items-list__icon"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <use href="sprite.svg#message-question 1"></use>
+                </svg>
+                <p class="items-list__text">Help</p>
+                <svg class="items-list__arrow" width="16" height="16">
+                  <use href="sprite.svg#chevron-right 2"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side-menu__footer">
+          <div class="footer__img">
+            <img src="Ellipse 8.jpg" alt="" />
+          </div>
+          <div>
+            <p class="footer__description-name">Evano</p>
+            <p class="footer__description-job">Project Manager</p>
+          </div>
         </div>
       </div>
-
-      <div class="side-menu__items-list">
-        <ul class="items-list">
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/key-square.svg" alt="" class="item__icon">
-              <p class="item__text">Dashboard</p>
-            </div>
-          </li>
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/3d-square.svg" alt="" class="item__icon">
-              <p class="item__text">Product</p>
-              <img src="/icons/chevron-right 2.svg" alt="" class="item__icon">
-            </div>
-          </li>
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/user-square.svg" alt="" class="item__icon">
-              <p class="item__text">Customers</p>
-              <img src="/icons/key-square.svg" alt="" class="item__icon">
-            </div>
-          </li>
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/wallet-money.svg" alt="" class="item__icon">
-              <p class="item__text">Income</p>
-              <img src="/icons/key-square.svg" alt="" class="item__icon">
-            </div>
-          </li>
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/discount-shape.svg" alt="" class="item__icon">
-              <p class="item__text">Promote</p>
-              <img src="/icons/key-square.svg" alt="" class="item__icon">
-            </div>
-          </li>
-          <li class="items-list__item">
-            <div class="item__wrapper">
-              <img src="/icons/message-question.svg" alt="" class="item__icon">
-              <p class="item__text">Help</p>
-              <img src="/icons/key-square.svg" alt="" class="item__icon">
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="main">main</div>
     </div>
-    <div class="main">main</div>
-  </div>
-</body>
-
+  </body>
 </html>
