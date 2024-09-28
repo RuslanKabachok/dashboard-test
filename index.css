@@ -20,10 +20,6 @@
   flex-direction: column;
 }
 
-.main {
-  background-color: brown;
-}
-
 .header__icon {
   width: 37px;
   height: 37px;
@@ -95,7 +91,6 @@
 }
 
 .items-list__wrapper:hover .items-list__arrow {
-  fill: white;
   stroke: white;
 }
 
@@ -151,4 +146,147 @@
   font-weight: 400;
 
   color: #9197b3;
+}
+
+.main {
+  background-color: #fafbff;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__wrapper {
+  padding: 41px 95px 258px 71px;
+}
+
+.main__title {
+  font-weight: 500;
+  font-style: normal;
+
+  margin-bottom: 51px;
+}
+
+.main__dashboard__wrapper {
+  padding: 30px 40px;
+
+  background-color: white;
+
+  border-radius: 30px;
+}
+
+.main__dashboard__wrapper-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+  padding-right: 13px;
+}
+
+.main__dashboard__wrapper-header__text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main__dashboard__wrapper-header__description {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #16c098;
+}
+
+.main__dashboard__wrapper-header-container {
+  display: flex;
+  flex-direction: column;
+}
+.main__dashboard__wrapper-header__input {
+  background-color: #f9fbff;
+  border-radius: 12px;
+
+  width: 216px;
+  height: 38px;
+
+  padding: 7px 8px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+
+  color: #b5b7c0;
+}
+
+input::placeholder {
+  color: #b5b7c0;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.table thead {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.table th {
+  font-weight: 500;
+  font-size: 14px;
+  color: #b5b7c0;
+
+  text-align: left;
+  padding: 14px 0;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.table tbody tr:hover {
+  background-color: #f9fbff;
+}
+
+.table tbody td {
+  color: #292d32;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+th:last-child {
+  padding-left: 16px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 29px;
+}
+
+.status.active {
+  background-color: #def7ec;
+  border: 1px solid #00b087;
+  color: #00b087;
+}
+
+.status.inactive {
+  background-color: #ffc5c5;
+  color: #df0404;
+  border: 1px solid #df0404;
 }
