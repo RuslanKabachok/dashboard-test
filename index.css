@@ -13,7 +13,7 @@
 
 .side-menu {
   padding: 36px 28px 76px 28px;
-  width: 306px;
+  max-width: 306px;
   height: 100vh;
 
   display: flex;
@@ -79,6 +79,8 @@
 .items-list__wrapper:hover {
   background-color: #5932ea;
   color: white;
+
+  cursor: pointer;
 }
 
 .items-list__wrapper:hover .items-list__text {
@@ -289,4 +291,15 @@ th:last-child {
   background-color: #ffc5c5;
   color: #df0404;
   border: 1px solid #df0404;
+}
+
+.main__dashboard-pagination {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+button {
+  cursor: pointer;
 }
