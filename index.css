@@ -512,82 +512,81 @@ div button:last-of-type {
 
     width: 27px;
     height: 30px;
-    }
   }
+}
 
-  .burger-menu.hide {
-    opacity: 0;
-    transition: opacity 0.1s ease;
-    cursor: auto;
-  }
+.burger-menu.hide {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  cursor: auto;
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
-    z-index: 999;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
 
-  .overlay.show {
-    opacity: 1;
-    visibility: visible;
-  }
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
 
-  .main__wrapper {
-    padding: 48px;
-  }
+.main__wrapper {
+  padding: 48px;
+}
 
-  .main__title {
-    font-size: 25px;
-    margin-bottom: 25px;
-  }
+.main__title {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
 
-  .main__dashboard__wrapper {
-    padding: 18px;
-  }
+.main__dashboard__wrapper {
+  padding: 18px;
+}
 
-  .main__dashboard__wrapper-header {
-    margin-bottom: 14px;
-  }
+.main__dashboard__wrapper-header {
+  margin-bottom: 14px;
+}
 
-  .table th {
-    font-size: 13px;
-    padding: 11px 0;
-  }
+.table th {
+  font-size: 13px;
+  padding: 11px 0;
+}
 
-  .table tbody td {
-    font-size: 12px;
-    padding: 14px 0;
-  }
+.table tbody td {
+  font-size: 12px;
+  padding: 14px 0;
+}
 
-  .status {
-    font-size: 12px;
-    width: 57px;
-    height: 26px;
-  }
+.status {
+  font-size: 12px;
+  width: 57px;
+  height: 26px;
+}
 
-  .main__dashboard-pagination {
-    margin-top: 16px;
-  }
+.main__dashboard-pagination {
+  margin-top: 16px;
+}
 
-  .dashboard-pagination__text {
-    font-size: 12px;
-  }
+.dashboard-pagination__text {
+  font-size: 12px;
+}
 
-  button {
-    width: 21px;
-    height: 21px;
-    font-size: 11px;
-    margin-right: 5px;
-  }
+button {
+  width: 21px;
+  height: 21px;
+  font-size: 11px;
+  margin-right: 5px;
+}
 
-  .right-margin {
-    margin-right: 5px;
-  }
+.right-margin {
+  margin-right: 5px;
 }
