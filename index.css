@@ -167,7 +167,7 @@
 .main {
   background-color: #fafbff;
 
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -418,7 +418,7 @@ div button:last-of-type {
   }
 
   .main {
-    height: 100%;
+    width: 1000%;
   }
 
   .main__wrapper {
@@ -481,6 +481,7 @@ div button:last-of-type {
   .side-menu {
     left: -250px;
     position: fixed;
+    height: 100%;
 
     z-index: 1000;
     transition: left 0.3s ease;
@@ -494,8 +495,10 @@ div button:last-of-type {
   .burger-menu {
     display: block;
 
-    top: 20px;
-    left: 20px;
+    top: 6px;
+    left: 6px;
+
+    font-size: 20px;
 
     box-shadow: 13px 14px 87px 0px rgba(0, 0, 0, 0.77);
 
@@ -504,21 +507,21 @@ div button:last-of-type {
     border: none;
     cursor: pointer;
 
-    transition: left 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.4s ease;
   }
 
   .burger-menu.hide {
-    top: 20px;
-    left: 213px;
-    z-index: 1100;
+    opacity: 0;
+    transition: opacity 0.1s ease;
   }
 
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
@@ -529,5 +532,57 @@ div button:last-of-type {
   .overlay.show {
     opacity: 1;
     visibility: visible;
+  }
+
+  .main__wrapper {
+    padding: 48px;
+  }
+
+  .main__title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .main__dashboard__wrapper {
+    padding: 18px;
+  }
+
+  .main__dashboard__wrapper-header {
+    margin-bottom: 14px;
+  }
+
+  .table th {
+    font-size: 13px;
+    padding: 11px 0;
+  }
+
+  .table tbody td {
+    font-size: 12px;
+    padding: 14px 0;
+  }
+
+  .status {
+    font-size: 12px;
+    width: 57px;
+    height: 26px;
+  }
+
+  .main__dashboard-pagination {
+    margin-top: 16px;
+  }
+
+  .dashboard-pagination__text {
+    font-size: 12px;
+  }
+
+  button {
+    width: 21px;
+    height: 21px;
+    font-size: 11px;
+    margin-right: 5px;
+  }
+
+  .right-margin {
+    margin-right: 5px;
   }
 }
