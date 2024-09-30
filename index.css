@@ -514,6 +514,7 @@ div button:last-of-type {
   .burger-menu.hide {
     opacity: 0;
     transition: opacity 0.1s ease;
+    cursor: auto;
   }
 
   .overlay {
